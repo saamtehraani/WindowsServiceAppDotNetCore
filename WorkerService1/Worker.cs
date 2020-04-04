@@ -28,8 +28,8 @@ namespace WorkerService1
             {
                 using (var scope = _serviceProvider.CreateScope())
                 {
-                    var serviceA = scope.ServiceProvider.GetRequiredService<ISampleService>();
-                    await serviceA.GetPersons();
+                    var sampleService = scope.ServiceProvider.GetRequiredService<ISampleService>();
+                    await sampleService.GetPersons();
                 }
 
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);

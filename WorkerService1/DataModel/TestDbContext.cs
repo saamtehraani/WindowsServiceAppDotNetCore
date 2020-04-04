@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace WorkerService1.DataModel.Model
 {
@@ -16,6 +14,5 @@ namespace WorkerService1.DataModel.Model
         }
 
         public virtual DbSet<Person> Person { get; set; }
-        
     }
 }

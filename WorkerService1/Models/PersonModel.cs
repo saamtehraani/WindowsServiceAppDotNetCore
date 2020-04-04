@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace WorkerService1.Models
+﻿namespace WorkerService1.Models
 {
     public class PersonModel
     {
